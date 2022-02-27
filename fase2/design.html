@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+</head>
+<body>
+    <header>
+        <h1>Sintaxis, Selectores CSS e Interacción Humano Ordenador</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Temas
+                <ul>
+                    <li>Sintaxis y Selectores CSS</li>
+                    <li>Interacción Humano Ordenador</li>
+                </ul>
+            </li>
+            <li>Recursos Digitales</li>
+            <li>Aprendizaje</li>
+            <li>Acerca de</li>
+                    </ul>
+    </nav>
+
+    <section>
+        <h3>Propósito</h3>
+        <p>
+            El propósito del sitio es dar a conocer a los usuarios tanto las definiciones como las aplicaciones de CSS tomando como base su sintaxis y sus selectores, además de dar a conocer como se lleva a cabo la interacción entre humano y ordenador, de esta manera dar solución a la actividad fase 2 - Diseño sitios web.
+        </p>
+    </section>
+
+    <article>
+        <h3>Sintaxis y selectores CSS</h3>
+        <p>
+            Inicialmente vamos a definir qué es CSS, este es el formato para páginas creadas en formato HTML basada en los estándares de hojas estilo cascada, su uso le permite ahorrar tiempo, dar consistencia y facilitar la escritura de páginas.
+            Según Sirvent Collado, L., & Luján-Mora, S. (2013) la sintaxis consta de dos partes, el selector y la declaración, por ejemplo:
+            h2 {color:black}
+            En éste ejemplo la etiqueta h2 sería el selector, notifica que el estilo definido se aplicaría a los elementos h2 y la declaración color:black indica que el color del texto de tolos los elementos deben ser de color negro.
+            La declaración se debe encerrar entre llaves y contener las definiciones. Cada una consta de propiedad/valor, donde se separa por dos puntos
+            selector {propiedad:valor}
+            El selector es el nombre de un elemento HTML pero también puede ser de clase, un ID de selector o un selector de contexto, si el valor tiene más de una palabra se pone entre comillas.
+            Para aplicar estilos a varios elementos se pueden agrupar los selectores que comparten definiciones. Para ello se escribe un elemento tras otro separado por coma.
+
+            <p><strong>Selectores de Clase</strong>
+               <p>Los selectores de clase le permiten establecer distintos estilos a aplicar al mismo elemento, al igual que cualquier atributo se puede especificar una vez en un elemento. También se pueden definir sin el nombre de un elemento en el principio, en este caso las definiciones se aplican a cualquier elemento cuyo atributo de clase tiene el valor.</p></p> 
+
+               <p><strong>Selectores de identificación</strong>
+            <p>Es diferente al selector de clase porque se aplica a un elemento de la página. Las reglas dictan que los valores del atributo no se pueden repetir en la misma página. Se desprende que el número de elementos en un determinado documento es uno o es cero.</p></p>
+
+            <p><strong>Selector de Tipo</strong>
+            <p>Son aquellos que selecciona todos los elementos que coninciden con el nombre del elemento especificado</p></p>
+
+            <p><strong>Selector Universal</strong>
+            <p>Este selector selecciona todos los elementos. Tiene la opción de estar restringido a un nombre específico o a todos los espacios de nombres</p>
+            <p>* ns | **|*</p></p>
+
+            <p><strong>Selector de atributo</strong>
+            <p>Selecciona todos los elementos basándose en el valor de un atributo específico</p></p>
+
+            <p><strong>Selector por pseudoclase :matches()</strong>
+            <p>Es del tipo funcional y admite como argumento una lista de selección, se indica dentro del paréntesis y separados por comas los casos en que aplicará el bloque de declaraciones</p></p>
+
+            <p><strong>Selector por pseudoclase :not()</strong>
+            <p>Al contrario que el selector matches el selector not apunta a los que no cumplen con los argumentos indicados</p></p>
+
+            <p><strong>Selector por pseudoclase :has()</strong>
+            <p>Es la formulación del selector padre, se usa para apuntar a elementos que contengan lo que se incluyo en el argumento</p></p>
+
+            <p><strong>Selector por pseudoElemento</strong>
+            <p><ol>
+                <li><strong>::after</strong>  Permite la incersión de contenido adicional antes del contenido de cualquier elemento</li>
+                <li><strong>::attr()</strong> Obtiene el valor de un atributo para el primer elemento del conjunto coincidente o establece uno o más atributos para cada elemento coincidente</li>
+                <li><strong>::backdrop</strong></li>
+                <li><strong>::before</strong> Al contrario del atributo after este permite la incersión de contenido adicional después del contenido de cualquier elemento</li>
+                <li><strong>::choices</strong> Se usa para definir opciones de una campo para obtener la lista desplegable</li>
+                <li><strong>::first-letter</strong> Es usado para acceder a la primera letra del contenido de un elemento</li>
+                <li><strong>::first-line</strong> Se usa para acceder a la primera línea del contenido de un elemento</li>
+                <li><strong>::footnote-call</strong> Es insertado en lugar del elemento footnote cuando es removido del flujo. De forma predeterminada el valor de este pseudo elemento es el valor del contador foortnote con el estilo de un número en superindice</li>
+                <li><strong>::footnote-marker</strong> Representa el marcador del footnote , el número o simbolo que identifica cada uno. Éste se coloca al principio del contenido del padre y está en la línea predeterminadamente</li>
+                <li><strong>::marker</strong> Es usada para numerar los párrafos designados como "Notes"</li>
+                <li><strong>::nth-fragment()</strong> Describe algunas de las fragment boxes generadas por un elemento, el argumento toma la misma sintaxis que el argumento nth-child definida en el SELECT, la diferencia radica en que el número es relativo a los cuadros de fragmentos que se generaron por el elemento</li>
+                <li><strong>::read-only</strong> Representa un elemento no editable por el usuario </li>
+                <li><strong>::repeat-index</strong> Representa el elemento actual de una secuencia repetitiva</li>
+                <li><strong>::repeat-item</strong> Representa un elemento único de una secuencia repetitiva. Generada como padre de los elemento en un único elemento repetido. Se genera como padre de los elementos en un elemento repetido, cada uno está sociado con un grupo de datos de instancia particular y se afecta por propiedades de cada elemento del modelo. </li>
+                <li><strong>::value</strong></li>
+            </ol></p></p>
+
+            <p><strong>Selector por pseudoClase</strong></p>
+            <p><ol>
+                <li><strong>:active</strong> 
+                <li><strong>:active-drop</strong> </li>
+                <li><strong>:ancestor()</strong> </li>
+                <li><strong>:any-link</strong></li>
+                <li><strong>:blank</strong></li>
+                <li><strong>:checked</strong></li>
+                <li><strong>:current</strong></li>
+                <li><strong>:dir</strong></li>
+                <li><strong>:default</strong></li>
+                <li><strong>:disabled</strong></li>
+                <li><strong>:empty</strong></li>
+                <li><strong>:enabled</strong></li>
+                <li><strong>:first</strong></li>
+                <li><strong>:first-child</strong></li>
+                <li><strong>:first-of-type</strong></li>
+                <li><strong>:focus</strong></li>
+                <li><strong>:fullscreen</strong></li>
+                <li><strong>:future</strong></li>
+                <li><strong>:host</strong></li>
+                <li><strong>:hover</strong></li>
+                <li><strong>:indeterminate</strong></li>
+                <li><strong>:in-range</strong></li>
+                <li><strong>:invalid</strong></li>
+                <li><strong>:invalid-drop</strong></li>
+                <li><strong>:lang</strong></li>
+                <li><strong>:last-child</strong></li>
+                <li><strong>:last-of-type</strong></li>
+                <li><strong>:left</strong></li>
+                <li><strong>:link</strong></li>
+                <li><strong>:local-link</strong></li>
+                <li><strong>:matches</strong></li>
+                <li><strong>:not</strong></li>
+                <li><strong>:nth-child</strong></li>
+                <li><strong>:nth-column</strong></li>
+                <li><strong>nth-last-child()</strong></li>
+                <li><strong>nth-last-column</strong></li>
+                <li><strong>nth-last-of-type()</strong></li>
+                <li><strong>:only-child</strong></li>
+                <li><strong>:only-of-type</strong></li>
+                <li><strong>:optional</strong></li>
+                <li><strong>:out-of-range</strong></li>
+                <li><strong>:past</strong></li>
+                <li><strong>:placeholder-shown</strong></li>
+                <li><strong>:read-only</strong></li>
+                <li><strong>:read-write</strong></li>
+                <li><strong>:required</strong></li>
+                <li><strong>:right</strong></li>
+                <li><strong>:root</strong></li>
+                <li><strong>:scope</strong></li>
+                <li><strong>:target</strong></li>
+                <li><strong>:top</strong></li>
+                <li><strong>:valid</strong></li>
+                <li><strong>:valid-drop</strong></li>
+                <li><strong>:visited</strong></li>
+            </ol></p>
+            </p>
+            <img src="img/CSS-SELECT_&_DECLARATION.png" alt="Imagen seleccionada para dar una vista a la declaración de una etiqueta CSS">
+
+    </article>
+    <article>
+        <h3>Interacción Humano - Ordenador</h3>
+        <p>
+            Se puede definir como la disciplina encargada de estudiar como las personas interactúan con las computadoras y hasta que punto se desarrollan para facilitar la interacción con las personas denominada HCI, esta consta de tres partes, los usuarios, los ordenadores y la interacción realizada entre ellos.
+            <p>
+                Ésta se convirtió en una disciplina con la creación de la computadora personal, con el primer Macintosh y Commodore 64 utilizados en oficina, las personas notaron como esta transición afecta no solo al trabajo sino a sus vidad diarias. El HCI es un dominio que abarca disciplinas como la informática, ingenieria de factores humanos, inteligencia artificial, lingüistica, entre otros.
+                <p>En la interacción las palabras a tener en cuenta son la usabilidad, seguridad y funcionalidad, para realizar la investigación de este debe tener en cuenta lo siguiente:
+
+                    <ol>
+                        <li>Comprender los factores que determinan como las personas hacen uso de la tecnología debe ser el punto de partida para cualquiera de los proyectos de HCI. Es un proceso continuo desarrollado a lo largo del proyecto</li>
+                        <li>La segunda parte es el enfoque centrado en las personas. Se expande para crear soluciones para proyectos como accesibilidad para personas mayores o discapacitados. En ésta fase el diseño de interacción consiste en la creación de sistemas encargados de mejorar la vida de las personas.</li>
+                        <li>Se debe partir de las necesidades de cliente, desarrollando herramientas y técnicas usadas para la construcción de sistemas adecuados para la satisfacción de dichas necesidades.</li>
+                        <li>Se debe crear la interacción del sistema de usuario efectiva, eficiente y segura.</li>
+                    </ol>
+
+                    Teniendo en cuenta lo anterior se debe empezar por entender las necesidades de las personas, para construir el sistema de acuerdo a las necesidades del usuario
+                    <p>También hay que tener en cuenta que la usabilidad es uno de los conceptos clave. Es decir, hacer que los sistemas sean fáciles de usar. Mejorando la competitividad, fidelización de clientes y reducción de costes. Durante las pruebas de usabilidad se establecen los aspectos positivos y negativos del prototipo. Estas se basan en analizar los factores psicológicos humanos</p>
+
+                    <p>El HCI está centrado en la investigación para el desarrollo de una comprensión empírica de usuarios. Los diseñarores de la experiencia de usuario se enfocan en la industria constuyendo productos y servicios. Estas disciplinas son complementarios, ya que los diseñadores usan la investigación sobre las mentalidades de los usuarios.</p>
+                    <h4>Usos de HCI</h4>
+                    <p>Es usada en muchas areas como el comercio e iindustria, las personas se conectan con máquinas para obtener resultados óptimos. Así mismo, la investigación militar aprovecha esta interacción. En el campo de la medicina los dispositivos ayudan pacientes en tareas cotidianas. El objetivo es armonizar las competencias humanas con las ventajas de las maquinas aprovechando las ventajas de ambos.</p>
+                    <p>Por ejemplo empresas como Google usan proyectos que muestran como se observa la interacción entre el ordentador y las personas. Al igual que proyectos como Siri, el control por voz para realizar búsquedas es una de las tecnologías de futuro. Elementos como Google Glass funcionan con comandos de voz. Funciones complementarias de Google Suggest de búsqueda tabién se identifica como parte de HCI. Otro paso más hacía la vinculación es el desarrollo de funciones de búsqueda como partes de distintas actualizaciones.</p>
+                </p>
+            </p>
+        </p>
+
+        <img src="Img/images.jpg" alt="Es una imágen seleccionada para demostrar los usos de la tecnología en distintos ambitos, de esta manera se demuestra la aplicación de la Interacción hombre - maquina.">
+    </article>
+        <h5>Mockup</h5>
+        <img src="" alt="Es la imágen del Mockup">
+
+        <footer>
+            <p>
+              <h3> Fecha de Actualización: 27 de Febrero del 2022</h3>
+                <p>Skype: stevenclaros</p>
+                <p>Correo Electrónico: sclarosb@unadvirtual.edu.co</p>
+            </p>
+        </footer>
+</body>
+</html>
