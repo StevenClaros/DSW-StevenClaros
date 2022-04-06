@@ -20,7 +20,7 @@ nav
     background-color:#DFD3C3;
 }
 
-.new
+.nuevo
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -35,7 +35,7 @@ container
  justify-content: center;
  }
 
-.contenedor
+.contenedortexto
 {
     max-width: 3000px;
     display: flex;
@@ -47,7 +47,7 @@ container
 }
 
 
-.parrafo
+.contenido
 {
     max-width: 2300;
     min-height: 50px;
@@ -56,6 +56,7 @@ container
     padding: 30px   50px;
     color: rgb(0, 0, 0);
     font-family:'Open sans';
+    font-size: larger;
     text-decoration: none;
     border-radius: 20px;
     float: left;
