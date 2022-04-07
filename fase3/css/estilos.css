@@ -81,11 +81,12 @@ footer{
     background: #F3E9DD;
     margin: 0 auto;
     color:#805B20;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
     padding: 30px   50px;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
+    font-size: small;
+    text-align: center;
 }
 
 .imgmock
@@ -134,4 +135,15 @@ ul, ol
 .menu li:hover > ul
 {
     display: block;
+}
+
+.menu li ul li 
+{
+    position: relative;
+}
+
+.menu li ul li ul
+{
+    right: -180px;
+    top: 0px;
 }
