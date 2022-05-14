@@ -1,0 +1,130 @@
+body
+{
+    background: #FDF6EC;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #8FBDD3;
+    padding: 20px;
+    color: #534340;
+}
+
+nav
+{
+    background-color:#DFD3C3;
+}
+
+.nuevo
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+container
+{
+ display: flex;
+ justify-content: center;
+ }
+
+.contenedortexto
+{
+    max-width: 3000px;
+    display: flex;
+    background: #C7B198;
+    margin: 0 auto;
+    color:rgb(255, 255, 255);
+    border-radius: 0 0 20px 20px;
+    padding: 30px  50px;
+    box-sizing: border-box
+}
+
+
+.contenido
+{
+    max-width: 2300;
+    min-height: 50px;
+    background: #FDF6EC;
+    margin: 0 20px;
+    padding: 30px   50px;
+    color: rgb(0, 0, 0);
+    font-family:'Open sans';
+    font-size: larger;
+    text-decoration: none;
+    border-radius: 20px;
+    float: left;
+}
+
+.titulo
+{
+    text-align: center;
+}
+
+aside
+{
+    float: right;
+    background-color: #DFD3C3;
+    padding: 30px;
+    grid-column:4/5;
+}
+
+
+footer{
+    clear: both;
+    max-width: 3000;
+    min-height: 130px;
+    background: #8FBDD3;
+    margin: 0 auto;
+    color:#534340;
+    border-radius: 10px 10px 0 0;
+    padding: 30px   50px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+.imgmock
+{
+    text-align: center;
+}
+
+.mult{
+    max-width: 1500px;
+    min-height: 50px;
+    background: #DFD3C3;
+    margin: 0 auto;
+    padding: 30px   50px;
+    color: rgb(0, 0, 0);
+    font-family:'Open sans';
+    text-align: center;
+    text-decoration: none;
+}
+
+.video{
+    max-width: 1350px;
+    min-height: 50px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 30px   50px;
+    border-radius: 20px;
+}
+
+.Creador{
+    max-width: 1350px;
+    min-height: 50px;
+    background: #DFD3C3;
+    margin: 0 auto;
+    padding: 30px   50px;
+    color: rgb(0, 0, 0);
+    font-family:'Open sans';
+    text-decoration: none;
+    border-radius: 20px;
+}
