@@ -1,153 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" lang="es" content="Steven Claros Bahos"/>
+    <meta name="keywords" content="Selectores CSS"/>
+    <meta name="description" content="En esta página se realiza una corta explicación sobre el tema de Selectores CSS"/>
+    <meta name="robots" content="index, follow"/>
+
     <title>Selectores CSS</title>
-    <!--Adición de registro para estilos CSS-->
     <link rel="stylesheet" href="../fase4/css/estilosv2.css">
-    <!--Adición de librerías boostrap-->
+    
+    <!--Se agregan estilos boostrap para el acondicionamiento del Menú-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-</head>
-<body>
-    <header>
-        <!--Encabezado con Logo y título de la página-->
-        <img src="img/logoUNAD.png" alt="Logo UNAD" width="215 px" height="140 px">
-        <h1 class=>Sintaxis y Selectores CSS e Interacción Humano Ordenador</h1>
-        <div>
-            <img src="img/LogoCSS.png" alt="Logo CSS" width="200" height="160">
-        </div>
-    </header>
-  <!--Creación barra de menú basada boostrap-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../fase4/index.html">Inicio</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Temas
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item" href="../fase4/Tema1-SelectoresCSS.html">Selectores CSS</a>
-                      <a class="dropdown-item" href="../fase4/Tema1-SintaxisCSS.html">Sintaxis CSS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../fase4/Tema2-InteraccionHumanoOrdenador.html">Interacción Humano Ordenador</a></li>
-                  </ul>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Recursos Digitales
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../fase4/Recurso1CSS.html">Recursos Digitales CSS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../fase4/Recurso2HCI.html">Recurso Digitales Interacción Humano Ordenador</a></li>
-                  </ul>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Aprendizaje 
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="../fase4/Actividad1.html">Actividad 1</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="../fase4/Actividad2.html">Actividad 2</a></li>
-                      </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../fase4/Acerca.html">Acerca de</a>
-                </li>
-              </ul>
-            </div>
+  </head>
+  <body>
+      <header>
+          <!--Encabezado con Logo y título de la página-->
+          <img src="img/logoUNAD.png" alt="Logo UNAD" width="215 px" height="140 px">
+          <h1 class=>Sintaxis y Selectores CSS e Interacción Humano Ordenador</h1>
+          <div>
+              <img src="img/LogoCSS.png" alt="Logo CSS" width="200" height="160">
           </div>
-        </nav>
-        <section class="contenedortexto">
-          <!--Contenido Principal de la página-->
-            <section class="contenido">
-            <article>   
-                <h2>Selectores CSS</h2>
-                <p>
-                    Los selectores se utilizan para encontrar o seleccionar elementos HTML por medio de su nombre o alguna característica con la cual puede ser identificado el elemento.
-                    <br><br>
-                
-                    <section class="imgmock">
-                        <img src="img/Selector CSS.png" alt="ésta imágen muestra como se estructura una sentencia en CSS" height="300" width="600">
-                    </section>
-                <p>
-                    Ya que tenemos como base la definición de un selector vamos a identificar los diferentes tipos de selectores existentes:
-                </p>
-                <p>
-                    <h1>Selectores de clase</h1>
-                </p>
-                <p>
-                    Los selectores de clase permiten establecer estilos que se van a aplicar al mismo elemento, al igual que cualquier atributo se puede especificar una vez en un elemento. También se puede definir sin el nombre de un elemento en el principio, las definiciones se aplican a cualquier elemento cuyo atributo tiene el valor.
-                </p>
+      </header>
+    <!--Creación barra de menú basada boostrap-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../fase4/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Temas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="../fase4/Tema1-SelectoresCSS.html">Selectores CSS</a>
+                        <a class="dropdown-item" href="../fase4/Tema1-SintaxisCSS.html">Sintaxis CSS</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../fase4/Tema2-InteraccionHumanoOrdenador.html">Interacción Humano Ordenador</a></li>
+                    </ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Recursos Digitales
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../fase4/Recurso1CSS.html">Recursos Digitales CSS</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../fase4/Recurso2HCI.html">Recurso Digitales Interacción Humano Ordenador</a></li>
+                    </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Aprendizaje 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="../fase4/Actividad1.html">Actividad 1</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../fase4/Actividad2.html">Actividad 2</a></li>
+                        </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../fase4/Acerca.html">Acerca de</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <section class="contenedortexto">
+            <!--Contenido Principal de la página-->
+              <section class="contenido">
+              <article>   
+                  <h2>Selectores CSS</h2>
+                  <p>
+                      Los selectores se utilizan para encontrar o seleccionar elementos HTML por medio de su nombre o alguna característica con la cual puede ser identificado el elemento.
+                      <br><br>
+                  
+                      <section class="imgmock">
+                          <img src="img/Selector CSS.png" alt="ésta imágen muestra como se estructura una sentencia en CSS" height="300" width="600">
+                      </section>
+                  <p>
+                      Ya que tenemos como base la definición de un selector vamos a identificar los diferentes tipos de selectores existentes:
+                  </p>
+                  <p>
+                      <h1>Selectores de clase</h1>
+                  </p>
+                  <p>
+                      Los selectores de clase permiten establecer estilos que se van a aplicar al mismo elemento, al igual que cualquier atributo se puede especificar una vez en un elemento. También se puede definir sin el nombre de un elemento en el principio, las definiciones se aplican a cualquier elemento cuyo atributo tiene el valor.
+                  </p>
 
-                <p>
-                    <h1>Selectores de identificación</h1>
-                </p>
-                <p>
-                    Son diferentes a los selectores de clase porque son aplicados a un elemento específico de la página. Las reglas dictan que los valores del atributo no se pueden repetir en la página. Se desprende que el número de elementos en un documento es uno o es cero.
-                </p>
-                <p>
-                    <h1>Selectores de Tipo</h1>
-                </p>
-                <p>
-                    Son aquellos que selecciona los elementos que coinciden con el nombre del elemento específicado.
-                </p>
-                <p>
-                    <h1>Selector Universal</h1>
-                </p>
-                <p>
-                    Es un selector que selecciona todos los elementos. Tiene la opción de estár restringido a un nombre específico o a todos los espacios de nombres.
-                </p>
-                <p>
-                    <h1>Selector de atributo</h1>
-                </p>
-                <p>
-                    Selecciona todos los elementos basándose en el valor de un atributo específico
-                </p>
-                <p>
-                    <h1>Selector por pseudoclase :matches()</h1>
-                </p>
-                <p>
-                    Es del tipo funcional y admite como argumento una lista de selección, se indica dentro del paréntesis y separados por comas los casos en que aplicará el bloque de declaraciones
-                </p>
-                <p>
-                    <h1>Selector por pseudoclase :not()</h1>
-                </p>
-                <p>
-                    Al contrario que el selector matches el selector not apunta a los que no cumplen con los argumentos indicados
-                </p>
+                  <p>
+                      <h1>Selectores de identificación</h1>
+                  </p>
+                  <p>
+                      Son diferentes a los selectores de clase porque son aplicados a un elemento específico de la página. Las reglas dictan que los valores del atributo no se pueden repetir en la página. Se desprende que el número de elementos en un documento es uno o es cero.
+                  </p>
+                  <p>
+                      <h1>Selectores de Tipo</h1>
+                  </p>
+                  <p>
+                      Son aquellos que selecciona los elementos que coinciden con el nombre del elemento específicado.
+                  </p>
+                  <p>
+                      <h1>Selector Universal</h1>
+                  </p>
+                  <p>
+                      Es un selector que selecciona todos los elementos. Tiene la opción de estár restringido a un nombre específico o a todos los espacios de nombres.
+                  </p>
+                  <p>
+                      <h1>Selector de atributo</h1>
+                  </p>
+                  <p>
+                      Selecciona todos los elementos basándose en el valor de un atributo específico
+                  </p>
+                  <p>
+                      <h1>Selector por pseudoclase :matches()</h1>
+                  </p>
+                  <p>
+                      Es del tipo funcional y admite como argumento una lista de selección, se indica dentro del paréntesis y separados por comas los casos en que aplicará el bloque de declaraciones
+                  </p>
+                  <p>
+                      <h1>Selector por pseudoclase :not()</h1>
+                  </p>
+                  <p>
+                      Al contrario que el selector matches el selector not apunta a los que no cumplen con los argumentos indicados
+                  </p>
 
-                <p>
-                    <p>
-                        Para profundizar un poco más en el tema de selectores puede dirijirse a la sección de  <a href="../fase3/Recurso1CSS.html"> Recursos digitales </a>
-                    </p>
-                </p>
-                    <br><br>
+                  <p>
+                      <p>
+                          Para profundizar un poco más en el tema de selectores puede dirijirse a la sección de  <a href="../fase3/Recurso1CSS.html"> Recursos digitales </a>
+                      </p>
+                  </p>
+                      <br><br>
 
-            </section>
-                <aside>
-        
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=300&height=750&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                
-                </aside>
-        </section>
-        <br>
-        <footer class="footer">
-          <!--Footer de la página con datos de autor-->
-          <p>
-                <h2>Fecha de Actualización: 13 de Mayo del 2022</h2>
-                <h2>Skype: stevenclaros</h2>
-                <h2>Correo Electrónico: sclarosb@unadvirtual.edu.co</h2>
-            </p>
-        </footer>
-</body>
+              </section>
+                  <aside>
+          
+                      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=300&height=750&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  
+                  </aside>
+          </section>
+          <br>
+          <footer class="footer">
+            <!--Footer de la página con datos de autor-->
+            <p>
+                  <h2>Fecha de Actualización: 13 de Mayo del 2022</h2>
+                  <h2>Skype: stevenclaros</h2>
+                  <h2>Correo Electrónico: sclarosb@unadvirtual.edu.co</h2>
+              </p>
+          </footer>
+  </body>
 </html>

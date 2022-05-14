@@ -1,99 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Actividad Práctica 2</title>
-    <!--Se agrega nuevo archivo css a la página-->
-    <link rel="stylesheet" href="css/estilosv2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" lang="es" content="Steven Claros Bahos"/>
+    <meta name="keywords" content="Desarrollo Actividad 2"/>
+    <meta name="description" content="En esta página se encuentra una actividad interactiva la cual es una Sopa de Letras que tienen palabras relacionadas con el concepto de interacción Humano Ordenador"/>
+    <meta name="robots" content="index, follow"/>
 
-    <!--Se agregan Librerias Boostrap-->
+    <title>Actividad 2</title>
+    <link rel="stylesheet" href="../fase4/css/estilosv2.css">
+
+    
+    <!--Se agregan estilos boostrap para el acondicionamiento del Menú-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <header>
+        <!--Encabezado de la página con título y Logo-->
+          <img src="img/logoUNAD.png" alt="Logo UNAD" width="215 px" height="140 px">
+          <h1 class=>Sintaxis y Selectores CSS e Interacción Humano Ordenador</h1>
+          <div>
+              <img src="img/LogoCSS.png" alt="Logo CSS" width="200" height="160">
+          </div>
 
-</head>
-<body>
-    <header>
-      <!--Encabezado de la página con título y Logo-->
-        <img src="img/logoUNAD.png" alt="Logo UNAD" width="215 px" height="140 px">
-        <h1 class=>Sintaxis y Selectores CSS e Interacción Humano Ordenador</h1>
-        <div>
-            <img src="img/LogoCSS.png" alt="Logo CSS" width="200" height="160">
-        </div>
-
-    </header>
-      <!--Creación del Menú en base Boostrap-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../fase4/index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Temas
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="../fase4/Tema1-SelectoresCSS.html">Selectores CSS</a>
-                        <a class="dropdown-item" href="../fase4/Tema1-SintaxisCSS.html">Sintaxis CSS</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="../fase4/Tema2-InteraccionHumanoOrdenador.html">Interacción Humano Ordenador</a></li>
-                    </ul>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Recursos Digitales
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="../fase4/Recurso1CSS.html">Recursos Digitales CSS</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="../fase4/Recurso2HCI.html">Recurso Digitales Interacción Humano Ordenador</a></li>
-                    </ul>
+      </header>
+        <!--Creación del Menú en base Boostrap-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../fase4/index.html">Inicio</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Aprendizaje 
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="../fase4/Actividad1.html">Actividad 1</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="../fase4/Actividad2.html">Actividad 2</a></li>
-                        </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../fase4/Acerca.html">Acerca de</a>
-                  </li>
-                </ul>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Temas
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="../fase4/Tema1-SelectoresCSS.html">Selectores CSS</a>
+                          <a class="dropdown-item" href="../fase4/Tema1-SintaxisCSS.html">Sintaxis CSS</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../fase4/Tema2-InteraccionHumanoOrdenador.html">Interacción Humano Ordenador</a></li>
+                      </ul>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recursos Digitales
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../fase4/Recurso1CSS.html">Recursos Digitales CSS</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../fase4/Recurso2HCI.html">Recurso Digitales Interacción Humano Ordenador</a></li>
+                      </ul>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Aprendizaje 
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../fase4/Actividad1.html">Actividad 1</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../fase4/Actividad2.html">Actividad 2</a></li>
+                          </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../fase4/Acerca.html">Acerca de</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </nav>
-          <section class="contenedortexto">
-          <!--Contenido Principal de la Página-->
-          <section class="mult">
-            <div class="video">
-                <iframe width="690" height="800" src="https://es.educaplay.com/juego/12151670-sopa_de_letras_iho.html"></iframe>
-            </div>
-            <br>
-            </section>
+            </nav>
+            <section class="contenedortexto">
+            <!--Contenido Principal de la Página-->
+            <section class="mult">
+              <div class="video">
+                  <iframe width="690" height="800" src="https://es.educaplay.com/juego/12151670-sopa_de_letras_iho.html"></iframe>
+              </div>
+              <br>
+              </section>
 
-                <aside class="red">
-                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=300&height=900&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                </aside>
-        </section>
-        </section>
-        <br>
+                  <aside class="red">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=300&height=900&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </aside>
+          </section>
+          </section>
+          <br>
 
-        <!--Footer de la Página-->
-        <footer class="footer">
-            <p>
-                <h2>Fecha de Actualización: 13 de Mayo del 2022</h2>
-                <h2>Skype: stevenclaros</h2>
-                <h2>Correo Electrónico: sclarosb@unadvirtual.edu.co</h2>
-            </p>
-        </footer>
-        
-</body>
+          <!--Footer de la Página-->
+          <footer class="footer">
+              <p>
+                  <h2>Fecha de Actualización: 13 de Mayo del 2022</h2>
+                  <h2>Skype: stevenclaros</h2>
+                  <h2>Correo Electrónico: sclarosb@unadvirtual.edu.co</h2>
+              </p>
+          </footer>
+          
+  </body>
 
 </html>
